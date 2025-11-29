@@ -6,10 +6,38 @@ package org.example;
 public class App {
 
     public String getGreeting() {
-        return "Hello World!";
+        return "program that uses a queue";
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        Puppy puppy = new Puppy(5);
+        Kitty kitty = new Kitty(9);
+        PygmyMarmoset marmoset = new PygmyMarmoset(4);
+
+// Create a queue data structure
+        queue queue1 = new queue();
+
+// The size of the queue should equal zero since there are no objects in it
+        System.out.println(queue1.size());
+
+// Add the cuties to the queue
+        queue1.enqueue(puppy);
+        queue1.enqueue(kitty);
+        queue1.enqueue(marmoset);
+
+// The size of the queue should equal three since there are three objects in it
+        System.out.println(queue1.size());
+
+// The first dequeue should return the puppy
+        queue1.dequeue();
+
+// The second dequeue should return the kitty
+        queue1.dequeue();
+
+// The third dequeue should return the pygmy marmoset
+        queue1.dequeue();
     }
 }
