@@ -15,15 +15,9 @@ public class Puppy implements Cutie {
         this.rating = rating;
     }
 
-    public String description() {
+    public String description() {return description;}
 
-        return description;
-    }
-
-    public Integer cutenessRating () {
-
-        return rating;
-    }
+    public Integer cutenessRating () {return rating;}
 
 }
 
